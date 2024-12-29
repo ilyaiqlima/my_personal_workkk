@@ -1,0 +1,37 @@
+body
+{
+	background-color: powderblue;
+}
+h1
+{
+	color: rebeccapurple;
+	background-color: beige;
+	font-family: georgia;
+	border: 4px dotted black;
+}
+h3
+{
+	color: red;
+	text-align: center;
+}
+p
+{
+	text-align: center;
+	font-family: times new roman;
+	color: darkblue;
+	font-size: 25px;
+}
+table, tr, td, th
+{
+	border: 4px red solid;
+	border-collapse: collapse;
+}
+th
+{
+	background-color: purple;
+	color: yellow;
+}
+tr:hover
+{
+	background-color: limegreen;
+}

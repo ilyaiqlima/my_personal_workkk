@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>HTML Table</title>
+
+	<style>
+		table, tr, th, td
+		{
+			border: 2px solid red;
+			border-collapse: collapse;
+		}
+		th, td
+		{
+			padding: 45px;
+		}
+		th
+		{
+			background-color: blue;
+			color: yellow;
+			text-align: right;
+		}
+		tr:nth-child(odd)
+		{
+			background-color: yellowgreen;
+		}
+		tr:nth-child(even)
+		{
+			background-color: lightskyblue;
+		}
+		td
+		{
+			text-align: center;
+		}
+		td:hover
+		{
+			background-color: grey;
+		}
+	</style>
+
+
+</head>
+<body>
+
+	<h1>Basic Table</h1>
+	
+    <table style="width:100%">
+        <caption>Table 1: Basic HTML Table</caption>
+        <tr>
+            <th style="width:30%">Name</th>
+            <th style="width:15%">Student ID</th>
+            <th style="width:45%">Picture</th>
+            <th style="width:10%">Phone Num</th>
+        </tr>
+        
+        <tr>
+            <td>Ilya Iqlima Binti Abdul Hakim</td>
+            <td>2022869794</td>
+            <td><img src="images/daisy_1.jpg" style="height:100px;"></td>
+            <td>0199868560</td>
+        </tr>
+
+        <tr style="height:250px">
+            <td>Ilya Iqlima Binti Abdul Hakim</td>
+            <td>2022869794</td>
+            <td><img src="images/cat_photos.jpeg" style="height:100px;"></td>
+            <td>0199868560</td>
+        </tr>
+
+        <tr>
+            <td>Ilya Iqlima Binti Abdul Hakim</td>
+            <td>2022869794</td>
+            <td><img src="images/tote_bag.jpg" style="height:100px;"></td>
+            <td>0199868560</td>
+        </tr>
+
+        <tr>
+            <td>Ilya Iqlima Binti Abdul Hakim</td>
+            <td>2022869794</td>
+            <td><img src="images/sunset_1.jpeg" style="height:100px;"></td>
+            <td>0199868560</td>
+        </tr>
+    </table>
+
+    
+    <h1>Colspan Table</h1>
+
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <th>Student ID</th>
+            <th colspan="3">Subject</th>
+        </tr>
+        
+        <tr>
+            <td>Ilya Iqlima Binti Abdul Hakim</td>
+            <td>2022869794</td>
+            <td>IMS456</td>
+            <td>IMS457</td>
+            <td>IMD311</td>
+        </tr>
+    </table>
+
+
+    <h1>Rowspan Table</h1>
+
+    <table style="width:100%">
+        <tr>
+            <th>Name</th>
+            <td>Ilya</td>
+        </tr>
+        
+        <tr>
+            <th rowspan="2">Email</th>
+            <td>ilyaiqlima.hakim@gmail.com</td>
+        </tr>
+
+        <tr>
+            <td>iqlima.hakim@gmail.com</td>
+        </tr>
+
+        <tr>
+            <th>Alamat</th>
+            <td rowspan="2">Kelantan</td>
+        </tr>
+
+        <tr>
+            <th>Alamat Surat</th>
+        </tr>
+    </table>
+
+        
+</body>
+</html>
